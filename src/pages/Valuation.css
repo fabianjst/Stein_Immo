@@ -1,0 +1,178 @@
+.valuation-header {
+    background: linear-gradient(rgba(16, 34, 52, 0.8), rgba(16, 34, 52, 0.8)), url('/img/hero-modern.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0 150px;
+    text-align: center;
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 1;
+}
+
+.valuation-header h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.valuation-content {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 80px;
+}
+
+.valuation-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+.step-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--color-primary);
+}
+
+.property-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.type-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+    background: var(--color-bg-light);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.type-card svg {
+    color: var(--color-primary);
+    transition: color 0.2s;
+}
+
+.type-card:hover {
+    background: white;
+    border-color: var(--color-accent);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.type-card:hover svg {
+    color: var(--color-accent);
+}
+
+.type-card span {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 25px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.step-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 40px auto 0;
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-back:hover {
+    color: var(--color-primary);
+}
+
+.step-buttons .btn-primary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Success Step */
+.success-icon {
+    width: 100px;
+    height: 100px;
+    background: #e8f5e9;
+    color: #4caf50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+}
+
+.step-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.step-container .btn-outline {
+    display: inline-block;
+}
+
+/* Progress Bar */
+.progress-bar {
+    height: 4px;
+    background: #eee;
+    margin-top: 40px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}

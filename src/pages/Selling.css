@@ -1,0 +1,125 @@
+.selling-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/happy-couple.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.selling-hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.selling-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selling-content {
+    padding: 80px 20px;
+}
+
+.selling-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.intro-text h2 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+.intro-text p {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.selling-benefits {
+    list-style: none;
+}
+
+.selling-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.check-icon {
+    color: var(--color-accent);
+    background: rgba(212, 175, 55, 0.1);
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.intro-image img {
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ */
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    color: var(--color-accent);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer.open {
+    max-height: 200px;
+    padding-bottom: 20px;
+}
+
+.faq-answer p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .selling-intro {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
