@@ -9,28 +9,28 @@ const References = () => {
             title: "Einfamilienhaus mit großem Garten",
             location: "Bad Kreuznach - Nord",
             price: "VERKAUFT",
-            image: "/img/house-modern.webp"
+            image: `${import.meta.env.BASE_URL}img/house-modern.webp`
         },
         {
             id: 2,
             title: "Moderne 3-Zimmer-Wohnung",
             location: "Rüdesheim",
             price: "VERKAUFT",
-            image: "/img/hero-modern.webp"
+            image: `${import.meta.env.BASE_URL}img/hero-modern.webp`
         },
         {
             id: 3,
             title: "Baugrundstück in Bestlage",
             location: "Bad Münster am Stein",
             price: "VERKAUFT",
-            image: "/img/house-modern.webp"
+            image: `${import.meta.env.BASE_URL}img/house-modern.webp`
         },
         {
             id: 4,
             title: "Mehrfamilienhaus (Kapitalanlage)",
             location: "Bingen am Rhein",
             price: "VERKAUFT",
-            image: "/img/hero-modern.webp"
+            image: `${import.meta.env.BASE_URL}img/hero-modern.webp`
         }
     ];
 

@@ -36,12 +36,12 @@ const Home = () => {
                         <p>
                             Ob Wohnung, Haus oder Grundstück – Immobilien Stein steht für maßgeschneiderte Strategien, klare Kommunikation und verbindliche Ergebnisse. Fairness, Diskretion und Zuverlässigkeit sind für uns keine Versprechen, sondern Grundsatz. Dafür stehe ich, Stefan Alex Stein, mit meinem Namen.
                         </p>
-                        <img src="/img/unterschrift-stefan-alex-stein.png" alt="Unterschrift Stefan Alex Stein" className="signature-image" />
+                        <img src={`${import.meta.env.BASE_URL}img/unterschrift-stefan-alex-stein.png`} alt="Unterschrift Stefan Alex Stein" className="signature-image" />
                         <br />
                         <Link to="/unternehmen/ueber-uns" className="text-link">Mehr über uns erfahren <ChevronRight size={16} /></Link>
                     </div>
                     <div className="welcome-image-wrapper">
-                        <img src="/img/stefan-profile.jpg" alt="Stefan Alex Stein" className="welcome-image" />
+                        <img src={`${import.meta.env.BASE_URL}img/stefan-profile.jpg`} alt="Stefan Alex Stein" className="welcome-image" />
                         <div className="image-caption">
                             Das Immobilienmakler-Team von<br /><strong>Stefan Alex Stein</strong>
                         </div>
@@ -56,7 +56,7 @@ const Home = () => {
                     <div className="services-grid">
                         <div className="service-card">
                             <div className="service-image">
-                                <img src="/img/house-modern.webp" alt="Immobilie kaufen" />
+                                <img src={`${import.meta.env.BASE_URL}img/house-modern.webp`} alt="Immobilie kaufen" />
                             </div>
                             <div className="service-content">
                                 <HomeIcon className="service-icon" size={32} />
@@ -68,7 +68,7 @@ const Home = () => {
 
                         <div className="service-card">
                             <div className="service-image">
-                                <img src="/img/happy-couple.jpg" alt="Immobilie verkaufen" />
+                                <img src={`${import.meta.env.BASE_URL}img/happy-couple.jpg`} alt="Immobilie verkaufen" />
                             </div>
                             <div className="service-content">
                                 <Key className="service-icon" size={32} />
@@ -80,7 +80,7 @@ const Home = () => {
 
                         <div className="service-card">
                             <div className="service-image">
-                                <img src="/img/hero-modern.webp" alt="Wertermittlung" /> {/* Placeholder/Reused as Bild A was missing */}
+                                <img src={`${import.meta.env.BASE_URL}img/hero-modern.webp`} alt="Wertermittlung" /> {/* Placeholder/Reused as Bild A was missing */}
                             </div>
                             <div className="service-content">
                                 <TrendingUp className="service-icon" size={32} />
@@ -112,12 +112,12 @@ const Home = () => {
                     <h2 className="section-title text-center">Ausgezeichnete Qualität</h2>
                     <div className="awards-scroll-container">
                         <div className="awards-track">
-                            <img src="/img/award-mitgliedschaft-2025.png" alt="Mitgliedschaft 2025" />
-                            <img src="/img/award-fcs-2021.png" alt="Top Immobilienmakler 2021" />
-                            <img src="/img/award-is24-2021.png" alt="Premium Partner 2021" />
-                            <img src="/img/award-immobilie1.jpg" alt="Immobilie1 Siegel" />
-                            <img src="/img/award-customer-satisfaction.png" alt="Kundenzufriedenheit" />
-                            <img src="/img/logo-ivd.jpg" alt="IVD Logo" />
+                            <img src={`${import.meta.env.BASE_URL}img/award-mitgliedschaft-2025.png`} alt="Mitgliedschaft 2025" />
+                            <img src={`${import.meta.env.BASE_URL}img/award-fcs-2021.png`} alt="Top Immobilienmakler 2021" />
+                            <img src={`${import.meta.env.BASE_URL}img/award-is24-2021.png`} alt="Premium Partner 2021" />
+                            <img src={`${import.meta.env.BASE_URL}img/award-immobilie1.jpg`} alt="Immobilie1 Siegel" />
+                            <img src={`${import.meta.env.BASE_URL}img/award-customer-satisfaction.png`} alt="Kundenzufriedenheit" />
+                            <img src={`${import.meta.env.BASE_URL}img/logo-ivd.jpg`} alt="IVD Logo" />
                         </div>
                         <div className="scroll-hint-left"></div>
                         <div className="scroll-hint-right"></div>

@@ -56,7 +56,7 @@ const Selling = () => {
                         </ul>
                     </div>
                     <div className="intro-image">
-                        <img src="/img/happy-couple.jpg" alt="Zufriedene Verkäufer" />
+                        <img src={`${import.meta.env.BASE_URL}img/happy-couple.jpg`} alt="Zufriedene Verkäufer" />
                     </div>
                 </div>
 

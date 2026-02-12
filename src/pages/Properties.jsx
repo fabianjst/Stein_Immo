@@ -15,7 +15,7 @@ const Properties = () => {
             baths: 2,
             price: "495.000 €",
             status: "Kaufen",
-            images: ["/img/house-modern.webp", "/img/hero-modern.webp"]
+            images: [`${import.meta.env.BASE_URL}img/house-modern.webp`, `${import.meta.env.BASE_URL}img/hero-modern.webp`]
         },
         {
             id: 2,
@@ -26,7 +26,7 @@ const Properties = () => {
             baths: 1,
             price: "320.000 €",
             status: "Kaufen",
-            images: ["/img/hero-modern.webp", "/img/house-modern.webp"]
+            images: [`${import.meta.env.BASE_URL}img/hero-modern.webp`, `${import.meta.env.BASE_URL}img/house-modern.webp`]
         },
         {
             id: 3,
@@ -37,7 +37,7 @@ const Properties = () => {
             baths: 4,
             price: "850.000 €",
             status: "Kaufen",
-            images: ["/img/house-modern.webp"]
+            images: [`${import.meta.env.BASE_URL}img/house-modern.webp`]
         }
     ];
 

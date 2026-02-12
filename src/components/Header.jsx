@@ -21,7 +21,7 @@ const Header = () => {
       <div className="main-header">
         <div className="container header-content">
           <Link to="/" className="logo">
-            <img src="/img/logo_color.svg" alt="Stein Immobilien Logo" className="logo-image" />
+            <img src={`${import.meta.env.BASE_URL}img/logo_color.svg`} alt="Stein Immobilien Logo" className="logo-image" />
           </Link>
 
           <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>

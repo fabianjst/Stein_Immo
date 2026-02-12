@@ -52,7 +52,7 @@ const AboutSection = () => (
 
             <div className="ceo-section">
                 <div className="ceo-image">
-                    <img src="/img/stefan-profile.jpg" alt="Stefan Alex Stein" />
+                    <img src={`${import.meta.env.BASE_URL}img/stefan-profile.jpg`} alt="Stefan Alex Stein" />
                 </div>
                 <div className="ceo-text">
                     <h3>Stefan Alex Stein</h3>
