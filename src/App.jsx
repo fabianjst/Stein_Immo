@@ -14,7 +14,7 @@ import News from './pages/News';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Stein_Immo">
       <div className="app-wrapper">
         <Header />
         <main className="main-content">
