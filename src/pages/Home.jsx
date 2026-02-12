@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Home as HomeIcon, Key, TrendingUp } from 'lucide-react';
 import './Home.css';
+import { newsData } from '../data/newsData';
 
 const Home = () => {
     return (
@@ -28,11 +29,15 @@ const Home = () => {
             <section className="section welcome-section">
                 <div className="container welcome-container">
                     <div className="welcome-text">
-                        <h2>Willkommen bei Stein Immobilien</h2>
+                        <h2>Erfolg ist planbar!</h2>
                         <p>
-                            Als familiengeführtes Unternehmen verbinden wir traditionelle Werte mit moderner Vermarktung.
-                            Wir nehmen uns Zeit für Ihre Wünsche und begleiten Sie mit Fachkompetenz und Leidenschaft auf dem Weg zu Ihrer Traumimmobilie oder zum erfolgreichen Verkauf.
+                            Seit 1996 entwickeln wir durchdachte Konzepte für den erfolgreichen Verkauf und die Vermittlung von Wohn- und Gewerbeimmobilien.
                         </p>
+                        <p>
+                            Ob Wohnung, Haus oder Grundstück – Immobilien Stein steht für maßgeschneiderte Strategien, klare Kommunikation und verbindliche Ergebnisse. Fairness, Diskretion und Zuverlässigkeit sind für uns keine Versprechen, sondern Grundsatz. Dafür stehe ich, Stefan Alex Stein, mit meinem Namen.
+                        </p>
+                        <img src="/img/unterschrift-stefan-alex-stein.png" alt="Unterschrift Stefan Alex Stein" className="signature-image" />
+                        <br />
                         <Link to="/unternehmen/ueber-uns" className="text-link">Mehr über uns erfahren <ChevronRight size={16} /></Link>
                     </div>
                     <div className="welcome-image-wrapper">
@@ -116,6 +121,31 @@ const Home = () => {
                         </div>
                         <div className="scroll-hint-left"></div>
                         <div className="scroll-hint-right"></div>
+                    </div>
+                </div>
+            </section>
+            {/* News Section */}
+            <section className="section news-section">
+                <div className="container">
+                    <h2 className="section-title text-center">Aktuelles aus der Immobilienwelt</h2>
+                    <div className="news-grid">
+                        {newsData.slice(0, 3).map(item => (
+                            <div key={item.id} className="news-card">
+                                <div className="news-image">
+                                    <img src={item.image} alt={item.title} />
+                                    <span className="news-category">{item.category}</span>
+                                </div>
+                                <div className="news-content">
+                                    <span className="news-date">{item.date}</span>
+                                    <h3>{item.title}</h3>
+                                    <p>{item.excerpt}</p>
+                                    <Link to="#" className="text-link">Weiterlesen <ChevronRight size={16} /></Link>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="text-center" style={{ marginTop: '40px' }}>
+                        <Link to="/aktuelles" className="btn-primary">Alle Neuigkeiten ansehen</Link>
                     </div>
                 </div>
             </section>

@@ -25,10 +25,11 @@ const Header = () => {
           </Link>
 
           <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
-            <Link to="/" className={`nav-link ${isActive('/')}`} onClick={closeMenu}>Startseite</Link>
+            <Link to="/" className={`nav-link ${isActive('/')}`} onClick={closeMenu}>Start</Link>
             <Link to="/angebote" className={`nav-link ${isActive('/angebote')}`} onClick={closeMenu}>Immobilienangebote</Link>
             <Link to="/wertermittlung" className={`nav-link ${isActive('/wertermittlung')}`} onClick={closeMenu}>Wertermittlung</Link>
             <Link to="/referenzen" className={`nav-link ${isActive('/referenzen')}`} onClick={closeMenu}>Referenzen</Link>
+            <Link to="/aktuelles" className={`nav-link ${isActive('/aktuelles')}`} onClick={closeMenu}>Aktuelles</Link>
 
             <div className="dropdown-container"
               onMouseEnter={() => setDropdownOpen(true)}

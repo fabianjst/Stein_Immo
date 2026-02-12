@@ -10,6 +10,7 @@ import About from './pages/About';
 import Impressum from './pages/Impressum';
 import Privacy from './pages/Privacy';
 import Contact from './pages/Contact';
+import News from './pages/News';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/referenzen" element={<References />} />
             <Route path="/unternehmen/*" element={<About />} />
             <Route path="/kontakt" element={<Contact />} />
+            <Route path="/aktuelles" element={<News />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Privacy />} />
           </Routes>
